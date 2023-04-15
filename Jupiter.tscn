@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Ball.gd" type="Script" id=1]
+[ext_resource path="res://Balls/144p/Jupiter@144p.png" type="Texture" id=2]
+
+[node name="Ball" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 26, -71.3, 45, -62.3, 45, -60.9, 60, -47.9, 60, -45.7, 67, -37.8, 67, -35.4, 72, -24.7, 72, 24.7, 70.6, 31, 69.1, 31, 59.2, 49, 57.8, 49, 43.8, 63, 41.5, 63, 24.3, 72, -25.2, 72, -39, 66.3, -39, 65, -60, 48, -60, 45.7, -67, 37.8, -67, 35.4, -72, 24.7, -72, -26, -71.3, -26, -62.3, -45, -60.9, -45, -47.9, -60, -45.7, -60, -37.8, -67, -35.4, -67, -23, -72, 26, -72 )

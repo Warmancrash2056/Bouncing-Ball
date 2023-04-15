@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Jupiter.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Mars.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Rolling 8 Ball.tscn" type="PackedScene" id=3]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="|" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 1008, 568, 1024, 256, 1024, 0, 0, 0, 0, 600, 216, 24, 944, 144, 968, 472, 0, 600, 552, 576 )
+
+[node name="Ball" parent="." instance=ExtResource( 1 )]
+position = Vector2( 344, 432 )
+
+[node name="Ball2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 752, 304 )
+
+[node name="Ball3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 288, 232 )
